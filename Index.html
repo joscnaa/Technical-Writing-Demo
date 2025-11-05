@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread Pay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <h1 class="top-heading">ROS: New Phone Payment Plan: Bread Pay</h1>
+
+    <hr/>
+
+    <p class="para">Cricket now offers customers a new option to finance their devices with a new phone payment plan.
+        <strong>Bread Pay</strong> is a phone payment plan solution which is now available today, which makes it easier to buy
+        devices and accessories with affordable payments. To qualify, customers will need a device 
+        purchase of $149.99 or more.
+    </p>
+
+
+
+<p class="para-2"> Key things to understand before moving forward with Bread Pay.</p><br>
+
+<div class="notes-card">
+        <p>FAQ:</p><br>
+        <ul>
+            <li class="first-list">
+                If a customer is approved for $1500 and spends $1000, can they use the remaining $500? 
+            </li>
+                <ul>
+                    <li class="unordered-list">No, each approval is for one transaction; Customers must reapply for additional purchases.</li>
+                </ul>
+            <li class="first-list">If a customer is approved for $3000 and spends $1500, are they guaranteed approval for the remaining $1500 on a new application?</li>
+                <ul>
+                    <li class="unordered-list">
+                        No guarantee — each application is evaluated independently. 
+                    </li>
+                </ul>
+            <li class="first-list">
+                If a customer gets approved and doesn't close the sale within 7 days, when are they eligible to reapply?
+            </li>
+                <ul>
+                    <li class="unordered-list">Approvals are valid for 7 days. The customer can reapply after 7 days.</li>
+                </ul>    
+            </ul>
+</div><br>
+
+<p class="para-3">Customers should contact Bread Financial Services at <a href="tel:+18449927323" class="phone-highlight">1-844-992-7323</a>
+    if they have any questions regarding their loan.</p>
+<br>
+
+
+<div><h3 class="para-3-1">Device Financing Options:</h3></div><hr class="hr-1">
+
+
+    <div class="payment-options">
+        <div class="option-card">
+            <h4 style="color: #065f46;">Bread Pay</h4>
+            <ul>
+                <li>Bread Pay will support Cricket by offering eligible customers Bread Pay Loans, which allows eligible consumers to make their purchases
+                    for $0 down and pay off their loans over 24 monthly installments. 
+                </li> 
+                <li>Bread Pay is offered through <a href="https://d.comenity.net/ac/comenitycard/public/home">Comenity Bank</a>. 
+                    <ul>
+                        <li>A tech-forward financial services provider with competitive payment, savings and lending
+                    </ul>
+                </li>
+                
+                <li>Enables merchants/retailers to provide an easy way for customers to buy what they want now and pay over time.</li>
+            </ul>
+        </div>        
+        <div class="option-card">
+            <h4 style="color: #065f46;">Progessive Leasing</h4>
+            <ul>
+                <li>Progressive Leasing will continue to be offered as a lease-to-own option for eligible customers to finance their devices.</li>
+                <li>Progressive Leasing allows customers to make low weekly or monthly payments with no credit needed and no long-term commitment.</li>
+                <li><a href="https://www.progleasing.com/en/?gad_campaignid=9121003838&gad_source=1&gbraid=0AAAAACq6HupDldUHZtPi6YPRjCvXuL9Nk&gclid=CjwKCAiAwqHIBhAEEiwAx9cTecKHRyp4O9s-8AOFkyfEhY-f3xF8AiRm8YMOPY6KXBWXPWDNN3eU6RoC7LYQAvD_BwE&utm_campaign=Brand&utm_content=Brand&utm_id=91221666406&utm_medium=CPC&utm_source=Google">
+                    Visit Progressive Leasing for more information.
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <div>
+        <h3 class="para-3-1">Comparison between Bread Pay and Progessive Leasing</h3><br>
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Bread Pay</th>
+                <th>Progressive Leasing</th>
+            </tr>
+            <tr>
+                <td>Interest</td>
+                <td>0% or 14.99% APR</td>
+                <td>Discounted interest before 90 days</td>
+            </tr>
+            <tr>
+                <td>Down Payment</td>
+                <td>$0 down</td>
+                <td>$49.99 inital payment</td>
+            </tr>
+            <tr>
+                <td>Payment Terms</td>
+                <td>24 monthly installments</td>
+                <td>Up to 12 month payment term</td>
+            </tr>
+            <tr>
+                <td>Credit Check</td>
+                <td>Soft Check</td>
+                <td>No credit needed</td>
+            </tr>
+            <tr>
+                <td>Purchase minimum</td>
+                <td>$149.99+ device purchase minimum</td>
+                <td>$149.99+ device purchase minimum</td>
+            </tr>
+
+
+
+        </table>
+
+        <br>
+
+    </div>
+
+
+
+
+
+    <!-- Modal for expanded images -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <div class="images-a">
+        <img src="images/breadpay.png" alt="Bread Pay Logo" class="expandable-image" onclick="openModal(this)">
+        <img src="images/progessive-leasing.png" alt="progessive leasing logo" class="expandable-image" onclick="openModal(this)">
+    </div><br><br>
+
+
+    <button id="toggleSteps">5 easy steps to use Device Financing</button><br><br><br>
+
+    <div id="stepsContainer" class="steps-hidden">
+        <ol>
+            <li class="second-list">Customer fills out application on device - enters personal information on their own device. (takes less than 5 mins)</li>
+            <li class="second-list">Customer finds out what they qualify for.</li>
+            <li class="second-list">Advocate fills out cart in aktivate.</li>
+            <li class="second-list">Customer accepts loan lease.</li>
+            <li class="second-list">Customer checks out paying with device financing.</li>
+        </ol>
+    </div><br><br><br>
+
+
+    <script>
+        // Expand/collapse steps
+        document.getElementById('toggleSteps').addEventListener('click', function() {
+            const container = document.getElementById('stepsContainer');
+            container.classList.toggle('steps-hidden');
+            container.classList.toggle('steps-visible');
+        });
+
+        // Modal image logic
+        function openModal(imgElement) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImg.src = imgElement.src;
+        }
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+        // Optional: close modal on ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+    
+    <div>
+        <a href="breadpay.html" class="modern-link">For a guided tutorial — Click here</a>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>

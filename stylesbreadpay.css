@@ -1,0 +1,312 @@
+/* Encouragement message for checkboxes */
+.checklist-instruction {
+    text-align: center;
+    font-size: 15px;
+    color: #399918;
+    border-radius: 12px;
+    margin: 18px auto 24px auto;
+    padding: 12px 18px;
+    max-width: 600px;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(5,150,105,0.07);
+    letter-spacing: 0.01em;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+/* Hide step 2 content (including heading) by default via inline style or JS */
+/* Styles for breadpay.html - center page contents and improve readability */
+html, body {
+    height: 100%;
+}
+body {
+    max-width: 980px;
+    margin: 30px auto;
+    padding: 24px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #0f172a;
+    background: #ffffff;
+    line-height: 1.6;
+    font-family: Palatino, URW Palladio L, Serif;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #065f46;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #e6edf0;
+    margin: 18px 0 26px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #064e3b;
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: center;
+    max-width: 820px;
+    margin: 6px auto 12px;
+}
+
+/* Make images responsive, larger and clearly visible */
+img {
+    display: block;
+    max-width: 80%; /* larger on desktop */
+    width: auto;
+    height: auto;
+    margin: 18px auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.4);
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid rgba(8, 23, 2, 0);
+}
+
+/* For large screen */
+@media (min-width: 1200px) {
+    img { max-width: 720px; }
+}
+
+/* Expand images structure */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90vh;
+    margin-top: 50px;
+}
+
+.modal-content {
+    animation: zoom 0.3s ease-in-out;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+/* Style for clickable images */
+.expandable-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.expandable-image:hover {
+    transform: scale(1.05);
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+/* Keep list content readable but centered within the page 
+div > ul,
+div > ol,
+div ul,
+div ol {
+    max-width: 760px;
+    margin: 8px auto 18px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+*/
+
+/* Increase spacing for list items */
+div ul li,
+div ol li {
+    margin-bottom: 10px;
+}
+
+/* Center links */
+a {
+    display: inline-block;
+    text-align: center;
+    margin: 8px auto;
+    color: #065f46;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal rule look better on small screens */
+@media (max-width: 640px) {
+    body { padding: 18px; }
+    img { max-width: 90%; }
+    h1 { font-size: 1.25rem; }
+    h3 { font-size: 1rem; }
+}
+
+/* Section checklist */
+.section {
+    margin: 18px 0 28px;
+}
+
+.section-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Hide images and lists by default */
+.section-content img,
+.section-content ol {
+    display: none;
+    transition: all 0.7s ease;
+}
+
+/* This will show images and contect when checked - design */
+.section-content.active img,
+.section-content.active ol {
+    display: block;
+    
+}
+
+.checklist {
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checklist .check input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #059669; 
+    cursor: pointer;
+}
+
+.section-content {
+    flex: 1;
+}
+
+/* Slight visual separation for the checklist items on small screens */
+@media (max-width: 720px) {
+    .section-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .checklist {
+        width: auto;
+        margin-bottom: 8px;
+    }
+    .section-content { width: 100%; }
+    .section-content h3 { text-align: center; }
+}
+
+/* Highlighted/checked state */
+.section-content.completed h3 {
+    background: linear-gradient(90deg, rgba(5,150,105,0.10), rgba(5,150,105,0.02));
+    border-left: 6px solid #059669;
+    padding-left: 14px;
+    border-radius: 6px;
+    transition: background 0.25s ease, border-left-color 0.25s ease, transform 0.18s ease;
+}
+
+
+.section-content h3 {
+    transition: color 0.18s ease, background 0.18s ease, transform 0.18s ease;
+}
+
+/* Support CSS-only highlighting for modern browsers using :has() */
+.section-row:has(.checklist input[type="checkbox"]:checked) .section-content h3 {
+    background: linear-gradient(90deg, rgba(5,150,105,0.10), rgba(5,150,105,0.02));
+    border-left: 6px solid #059669;
+    padding-left: 14px;
+    border-radius: 6px;
+}
+
+
+
+/*endling link*/
+
+.ending-link {
+    width: 410px;
+    padding: 10px 18px;
+    background: linear-gradient(90deg, #10b981 0%, #7214 100%);
+    border-radius: 600px;
+    box-shadow: 0 100 100px;
+    font-weight: 700;
+    letter-spacing:1px;
+    transition: transform 0.20s ease, opacity 0.18s ease;
+}
+
+.ending-link:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(5,150,105,0.22);
+}
+
+.ending-link:focus {
+    outline: 3px solid rgba(5,150,105,0.18);
+    outline-offset: 3px;
+}
+
+/* Clear button styles */
+.clear-button-container {
+    display: inline-block;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.clear-button {
+    padding: 10px 20px;
+    background-color: #5CB338;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clear-button:hover {
+    background-color: #399918;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.clear-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+    
+.hidden-step {
+    display: none;
+}

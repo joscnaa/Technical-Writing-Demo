@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training</title>
+    <style>
+        <!---->
+        .hidden-step {
+    display: none;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="step1">
+    <input type="checkbox" id="chk1" onchange="showNextStep(1)">
+    <label for="chk1">Step 1 Checklist Item</label>
+    <!-- Step 1 instructions content -->
+    <div class="instructions">
+        <p>Instructions for Step 1...</p>
+    </div>
+</div>
+
+<div id="step2" class="hidden-step">
+    <input type="checkbox" id="chk2" onchange="showNextStep(2)">
+    <label for="chk2">Step 2 Checklist Item</label>
+    <!-- Step 2 instructions content -->
+    <div class="instructions">
+        <p>Instructions for Step 2...</p>
+    </div>
+</div>
+
+<div id="step3" class="hidden-step">
+    <input type="checkbox" id="chk3" onchange="showNextStep(3)">
+    <label for="chk3">Step 3 Checklist Item</label>
+    <!-- Step 3 instructions content -->
+    <div class="instructions">
+        <p>Instructions for Step 3...</p>
+    </div>
+</div>
+
+<!-- Repeat for steps 4 through 8 -->
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function showNextStep(currentStepNumber) {
+    // Get the checkbox element for the current step
+    var currentCheckbox = document.getElementById('chk' + currentStepNumber);
+    
+    // Check if the current checkbox is actually checked
+    if (currentCheckbox.checked) {
+        var nextStepNumber = currentStepNumber + 1;
+        var nextStep = document.getElementById('step' + nextStepNumber);
+
+        // If the next step exists (e.g., step 2 after step 1), make it visible
+        if (nextStep) {
+            nextStep.classList.remove('hidden-step');
+            // Optionally, reveal the current step's detailed instructions immediately upon checking
+            // This assumes the instructions are inside the 'stepX' div
+            // var currentInstructions = nextStep.querySelector('.instructions');
+            // if (currentInstructions) currentInstructions.style.display = 'block';
+        }
+    } else {
+        // Optional: If a user unchecks a previous step, hide subsequent steps
+        var nextStepNumber = currentStepNumber + 1;
+        var nextStep = document.getElementById('step' + nextStepNumber);
+        if (nextStep) {
+            nextStep.classList.add('hidden-step');
+            // You might need more complex logic to hide all subsequent steps and their instructions recursively
+        }
+    }
+}
+
+
+
+
+
+</script>
+    
+</body>
+</html>

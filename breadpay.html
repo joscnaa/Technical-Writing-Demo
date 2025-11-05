@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Guided Bread Pay direction</title>
+                <link rel="stylesheet" href="stylesbreadpay.css">
+          
+            </head>
+            <body>
+            <!-- Expanded images -->
+            <div id="imageModal" class="modal" onclick="closeModal()">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+
+            <h1>ROS: Guided Tutorial - How to initiate Bread Pay</h1>
+
+
+            <hr/>
+
+            <div class="checklist-instruction">
+                <p>✅ Click each checkbox as you complete a step to reveal the next part of the tutorial!</p>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-1">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                            <h3>Step 1: Advocate will be prompted a QR code to start the application</h3>
+                        <p style="font-style: italic; color: red;">If customer is unable to scan the QR code, advocate will enter customers email address instead.</p>
+
+                        <div>
+                            <img src="./BDimages/bdstep1.png" alt="Step 1" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Advocate presents QR code or asks customer for email address.</li>
+                            <li>Customer enters their mobile number.</li>
+                            <li>Number will be used for login and to check for existing offer.</li>
+                            <li>Number will also be used for Multifactor Authentication.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Step 2 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-2">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                        <h3>Step 2: Customer will submit personal information</h3>
+
+                        <div>
+                            <img src="./BDimages/bdstep2.png" alt="Step 2" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Customer enter name and address</li>
+                            <li>Customer enters DOB, SSN and Income</li>
+                            <li>Customer agrees to T&Cs and submits</li>
+                                <ul>
+                                    <li>Verification Code will be sent to customer's device via SMS for Security</li>
+                            <li>This will protect against fraud.</li>
+                                </ul>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Step 3 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-3">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                        <h3>Step 3: Customer will then be presented with an approved offer</h3>
+
+                        <div>
+                            <img src="./BDimages/bdstep3.png" alt="Step 3" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Customer will be provided with an approval amount.</li>
+                            <li>Customer will then direct the advocate to proceed with checkout in Aktivate.</li>
+                                <ul>
+                                    <li>Advocate can confirm the lender amount approved by clicking on "Lease/Loan Lookup" in Aktivate.</li>
+                                </ul>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Step 4 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-4">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                        <h3>Step 4: Advocate will build the cart and select the phone payment plan for checkout</h3>
+
+                        <div>
+                            <img src="./BDimages/bdstep4.png" alt="Step 4" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Advocate builds cart in Aktivate by selecting/scanning all cart items.</li>
+                            <li>Cart is built with devices, accessories, rate plans, features, etc.</li>
+                            <li>Advocate will then select "Begin" option in Aktivate to initiate phone payment plan process.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Step 5 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-5">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                        <h3>Step 5: Adovcate will be prompted to enter customer information to identify customer lease/loan</h3>
+
+                        <div>
+                            <img src="./BDimages/bdstep5.png" alt="Step 5" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Advocate will perform lease/loan lookup.</li>
+                            <li>Adovcate will validate customer's name with ID and select "Next" to proceed.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Step 6 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-6">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                        <h3>Step 6: Cart items are selected based on available amount for lease/load</h3>
+
+                        <div>
+                            <img src="./BDimages/bdstep6.png" alt="Step 6" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Aktivate displays eligible items in cart that can be purchased using Bread Pay.</li>
+                            <li>Items which are not eligible through Bread Pay will be greyed out (starting price for device will need to be: $149.99)</li>
+                            <li>Adovcate will select items in the cart customer wants to purchase with Bread Pay.</li>
+                            <li>Remaining amount will adjust as items are selected.</li>
+                            <li>Once all items are selected, adovcate will click on "Submit"</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Step 7 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-7">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                        <h3>Step 7: Customer will be directed to accept loan/lease by scanning QR code in Aktivate</h3>
+
+                        <div>
+                            <img src="./BDimages/bdstep7.png" alt="Step 7" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Aktivate generates personalized QR code for customer to accept lender T&C on their own phone.</li>
+                            <li>Customer will be prompted to login to their account using the same phone number used in the application</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Step 8 -->
+            <div class="section">
+                <div class="section-row">
+                    <div class="checklist step-checkbox step-8">
+                        <label class="check"><input type="checkbox" aria-label="Mark step complete"></label>
+                    </div>
+                    <div class="section-content">
+                        <h3>Step 8: Customer agrees to Bread Pay and finalizes purchase</h3>
+
+                        <div>
+                            <img src="./BDimages/bdstep8.png" alt="Step 8" class="expandable-image" onclick="openModal(this)">
+                        </div><br>
+
+                        <ol>
+                            <li>Customer takes final approval steps</li>
+                            <li>Advocate will click on "Complete Payment" in Aktivate and finish the transaction for the Customer.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <hr><br>
+
+    
+
+
+
+
+
+            <!-- Not approved -->
+           <div>
+                <div class="clear-button-container">
+                <button id="clearChecklist" class="clear-button">Clear All Steps</button>
+                
+                </div><br>
+                <div class="clear-button-container" style="text-align:center; margin-top: 4px;">
+                <button id="unhideAllBtn" class="clear-button" style="background:#059669;">Show All Steps</button>
+            </div>
+            
+
+           </div><br><br><br><br>
+                    
+                    <div class="section-content">
+                        <h3 style="color: red;">If a customer is not approved for Bread Pay they will have the option to continue with Progressive Leasing</h3><br>
+                    </div><br>
+
+                
+    
+            <hr>
+
+
+
+
+            <br><br><br>
+
+            <!-- Script for checklist functionality -->
+
+                  <script>
+                    function openModal(imgElement) {
+                        const modal = document.getElementById("imageModal");
+                        const modalImg = document.getElementById("modalImage");
+                        modal.style.display = "block";
+                        modalImg.src = imgElement.src;
+                    }
+
+                    function closeModal() {
+                        document.getElementById("imageModal").style.display = "none";
+                    }
+
+
+
+                    // Sequential step reveal logic for steps 2-8, and show images/text fields for checked step
+                    function updateStepVisibility() {
+                        const sections = document.querySelectorAll('.section');
+                        // Always show step 1
+                        for (let i = 0; i < sections.length && i < 8; i++) {
+                            const thisCheckbox = sections[i].querySelector('.checklist input[type="checkbox"]');
+                            const thisContent = sections[i].querySelector('.section-content');
+                            const thisCheckboxDiv = sections[i].querySelector('.step-checkbox');
+                            // For step 1, always show
+                            if (i === 0) {
+                                if (thisCheckbox && thisContent) {
+                                    if (thisCheckbox.checked) {
+                                        thisContent.classList.add('active');
+                                    } else {
+                                        thisContent.classList.remove('active');
+                                    }
+                                }
+                                continue;
+                            }
+                            // For steps 2-8, show if previous is checked
+                            const prevCheckbox = sections[i-1].querySelector('.checklist input[type="checkbox"]');
+                            if (prevCheckbox && thisContent && thisCheckboxDiv) {
+                                if (prevCheckbox.checked) {
+                                    thisContent.style.display = '';
+                                    thisCheckboxDiv.style.display = '';
+                                    // Show images/text fields if this step's checkbox is checked
+                                    if (thisCheckbox && thisCheckbox.checked) {
+                                        thisContent.classList.add('active');
+                                    } else {
+                                        thisContent.classList.remove('active');
+                                    }
+                                } else {
+                                    thisContent.style.display = 'none';
+                                    thisCheckboxDiv.style.display = 'none';
+                                    thisContent.classList.remove('active');
+                                    // Uncheck this step's checkbox if hiding
+                                    if (thisCheckbox) thisCheckbox.checked = false;
+                                }
+                            }
+                        }
+                    }
+
+                    // Function to clear all checkboxes and hide steps 2-8
+                    function clearAllCheckboxes() {
+                        const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+                        checkboxes.forEach(checkbox => {
+                            checkbox.checked = false;
+                        });
+                        updateStepVisibility();
+                    }
+
+                    window.onload = function() {
+                        // Hide steps 2-8 content and checkboxes on load
+                        const sections = document.querySelectorAll('.section');
+                        for (let i = 1; i < sections.length && i < 8; i++) {
+                            const content = sections[i].querySelector('.section-content');
+                            const checkboxDiv = sections[i].querySelector('.step-checkbox');
+                            if (content) content.style.display = 'none';
+                            if (checkboxDiv) checkboxDiv.style.display = 'none';
+                        }
+                        // Add event listeners to all checkboxes
+                        const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+                        checkboxes.forEach(checkbox => {
+                            checkbox.addEventListener('change', updateStepVisibility);
+                        });
+                        // Add clear button event listener
+                        document.getElementById('clearChecklist').addEventListener('click', clearAllCheckboxes);
+                    }
+                        // hidden and show function
+
+
+                </script>
+
+            <!-- Script for show all steps functionality -->
+
+                   <script>
+            document.getElementById('unhideAllBtn').onclick = function() {
+                const sections = document.querySelectorAll('.section');
+                for (let i = 0; i < sections.length && i < 8; i++) {
+                    const content = sections[i].querySelector('.section-content');
+                    const checkboxDiv = sections[i].querySelector('.step-checkbox');
+                    if (content) {
+                        content.style.display = '';
+                        content.classList.add('active'); // ensures images/lists are shown
+                        // Unhide all images and lists inside this section
+                        const imgs = content.querySelectorAll('img');
+                        imgs.forEach(img => img.style.display = 'block');
+                        const ols = content.querySelectorAll('ol');
+                        ols.forEach(ol => ol.style.display = 'block');
+                    }
+                    if (checkboxDiv) checkboxDiv.style.display = '';
+                }
+            };
+            </script>
+            
+    
+            </body>
+            </html>
